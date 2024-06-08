@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6e3; /* Light beige background */
+    color: #333; /* Darker text color for readability */
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.scroll-announcement {
+    width: 100%;
+    background-color: #ffcc00; /* Bright yellow background for announcement */
+    color: #333; /* Dark text color for readability */
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for summer vibes */
+    font-size: 1.1em;
+}
+
+.scroll-announcement p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+    background-color: #e0f7fa; /* Light cyan background for the section */
+}
+
+.scroll-text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #00796b; /* Teal text color */
+    font-family: 'Trebuchet MS', sans-serif; /* Modern sans-serif font */
+}
+
+.scroll-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ffcc00; /* Yellow border for the image */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for summer vibes */
+}
