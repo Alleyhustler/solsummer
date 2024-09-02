@@ -1,0 +1,131 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Fullscreen background with GIF */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('f.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Scrolling images */
+.scrolling-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: scroll-images 30s linear infinite;
+}
+
+.scrolling-images img {
+    width: 25%; /* Adjust width based on the number of images */
+    height: auto;
+}
+
+/* Keyframes for horizontal scrolling */
+@keyframes scroll-images {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Centering content */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 1; /* Ensure content is on top of scrolling images */
+}
+
+/* Title container styling */
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Title styling */
+.title {
+    font-family: 'Cinzel', serif; /* Using Cinzel from Google Fonts */
+    font-size: 4rem;
+    color: #00f; /* Fantasy blue color */
+    margin: 0;
+}
+
+/* Icon styling */
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 200px;
+}
+
+/* Common button styles */
+.button {
+    width: 400px;
+    height: 340px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Cinzel', serif; /* Same font as title */
+    position: relative;
+    animation: float 3s ease-in-out infinite; /* Animation for movement */
+}
+
+/* Individual button backgrounds */
+.button-1 {
+    background: url('fis-removebg-preview.png') no-repeat center center;
+}
+
+.button-2 {
+    background: url('fis-removebg-preview.png') no-repeat center center;
+}
+
+/* Hover effect */
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Animation keyframes for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the vertical movement as needed */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
